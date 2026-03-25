@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>St. Bernadette</title>
+
+<body>
+    <div class="pray"><img
+            src="https://file.garden/Z_u3HUVLQiZZrE8Z/b/8daa1627cba492275fc7351afa212ba6-removebg-preview.png"></div>
+    <div class="layout">
+        <main>
+            <div class="box header">
+                <h1
+                    style="color:white; filter: drop-shadow(0px 1px black) drop-shadow(0 -1px black) drop-shadow(1px 0 black) drop-shadow(-1px 0 black);">
+                    Bernadette ✞ Soubirous </h1>
+            </div>
+            <div class="top">
+                <div style="width:100%;overflow: auto;" class="bio box">
+                    <div class="pfp"><img src="https://file.garden/Z_u3HUVLQiZZrE8Z/catholic/saints/bd.jpg"></div><a
+                        href="https://en.wikipedia.org/wiki/Bernadette_Soubirous"><b>Bernadette
+                            Soubirous</b></a><small>a.k.a,
+                        Marie-Bernarde Soubirous</small>was a millers daughter,
+                    and born on 7 January 1844 in Lourdes,
+                    Hautes-Pyrénées,
+                    Kingdom of France. She was the eldest of 9 siblings,
+                    and their family was poor. She had contracted cholera as a toddler and suffered severe asthma for
+                    the rest of her life. Bernadette at the age of 14 started seeing visions of Mary. February 1858
+                    being the first of 18. Mary asked Bernadette to dig,
+                    and a few days after healing water started to flow. She eventually died of her long-term illness at
+                    the age of 35 on 16 April 1879 (Easter Wednesday),
+                    while praying the Holy Rosary. Her body is currently preserved from decomposition.
+                </div>
+            </div>
+            <div style="margin-top:-8px;" class="box note">
+                <p>Saint Bernadette is the saint of bodily illness,
+                    people ridiculed for their faith,
+                    poverty,
+                    shepherds,
+                    and shepherdesses</p><small>Why must we suffer? Because here below pure Love cannot exist without
+                    suffering. O Jesus,
+                    Jesus,
+                    I no longer feel my cross when I think of yours.</small>
+            </div>
+            <div class="grid">
+                <div class="box"><b>Lorem</b><br>consectetur adipiscing elit </div>
+                <div class="box"><b>Lorem</b><br>consectetur adipiscing elit </div>
+                <div class="box"><b>Lorem</b><br>sed do eiusmod tempor </div>
+            </div>
+            <div class="row">
+                <div class="box"><b>Lorem</b><br>"Lorem ipsum dolor sit amet..."
+
+                </div>
+                <div class="box"><b>Lorem</b><br>ut labore et dolore magna aliqua </div>
+            </div>
+            <div class="footer-row">
+                <div class="box small">lorem</div>
+                <div class="box small">ipsum</div>
+                <div class="box small">dolor</div>
+            </div>
+        </main>
+    </div>
+</body>
+<style>
+    /* 
+
+
+
+=================================== LINUS TORVALDS =================================== 
+#
+#
+# You copied that function without understanding why it does what it does 
+# and as a result your code IS GARBAGE.
+#
+#
+=================================== LINUS TORVALDS =================================== 
+
+
+
+
+*/
+    * {
+        cursor: url('https://files.catbox.moe/e2qll4.png'), auto !important;
+        image-rendering: pixelated;
+        box-sizing: border-box;
+        text-transform: lowercase;
+        filter: grayscale(100%);
+
+    }
+
+    @font-face {
+        font-family: 'italic';
+        src: url(https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/SOSUE___.ttf);
+    }
+
+    @font-face {
+        font-family: 'so';
+        src: url(https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/SOCOND__.ttf);
+    }
+
+    body {
+        font-family: 'so';
+
+        font-size: 19px;
+        overflow: hidden;
+        background-color: black;
+        padding: 15px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .pray {
+        top: -20px;
+        width: 30%;
+        right: 900px;
+        z-index: 0;
+        position: absolute;
+        pointer-events: none;
+
+    }
+
+    .pray img {
+        pointer-events: none;
+        width: 100%;
+
+    }
+
+    .layout {
+        display: grid;
+        margin: -15px auto;
+    }
+
+
+    main {
+        width: 720px;
+        border: 20px solid;
+        border-image: url(https://files.catbox.moe/1a74zm.png) 80 round;
+
+    }
+
+    .box {
+        border: 1.5px solid black;
+        margin: 0;
+        padding: 5px;
+        background: rgba(255, 255, 255, 0.875);
+        backdrop-filter: blur(2px);
+    }
+
+    .header {
+        background: url('https://cdnarautos.s3.amazonaws.com/sites/2/2023/03/R256-4-D-DIV_ESPIRITUALIDADE-Corpo-incorrupto-de-Santa-Bernadette-696x501.jpg');
+        text-align: center;
+        text-transform: uppercase;
+        font-size: 19px;
+        border-bottom: none;
+    }
+
+    .sub {
+        font-size: 14px;
+        opacity: 0.7;
+    }
+
+    .top {
+        display: flex;
+        margin-bottom: 5px;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-row {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .small {
+        text-align: center;
+    }
+
+    .note {
+        text-align: center;
+    }
+
+    .pfp {
+        width: 40%;
+        float: left;
+        border: 20px solid;
+        border-image: url(https://file.garden/Z_u3HUVLQiZZrE8Z/b/roseas.png) 100 round;
+    }
+
+    .pfp img {
+        width: 100%;
+        border: 3.5px double black;
+
+    }
+</style>
