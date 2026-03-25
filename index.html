@@ -1,1 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>peelsessions</title>
+    <style>
+        /* 
+
+
+
+=================================== LINUS TORVALDS =================================== 
+#
+#
+# You copied that function without understanding why it does what it does 
+# and as a result your code IS GARBAGE.
+#
+#
+=================================== LINUS TORVALDS =================================== 
+
+
+
+
+*/
+
+        * {
+            cursor: url('https://files.catbox.moe/e2qll4.png'), auto !important;
+            image-rendering: pixelated;
+            box-sizing: border-box;
+            text-transform: lowercase;
+        }
+
+        @font-face {
+            font-family: 'italic';
+            src: url(https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/SOSUE___.ttf);
+        }
+
+        @font-face {
+            font-family: 'so';
+            src: url(https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/SOCOND__.ttf);
+        }
+
+        .bordered {
+            filter: grayscale(30%) brightness(85%) !important;
+            border: 20px solid transparent;
+            border-image-outset: -30px;
+            border-image: url('https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/border.png') 30 round;
+        }
+
+        body {
+            font-family: 'so';
+            font-size: 20px;
+            background: url('https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/bg.jpg') repeat;
+            background-size: 100px;
+            margin: 0;
+            min-height: 100vh;
+            color: white;
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        h1,
+        h2,
+        h3,
+        h4,
+        h5 {
+            font-size: 180%;
+            font-weight: 100;
+            margin: 0;
+            border-bottom: 1px solid white;
+        }
+
+        i {
+            font-family: 'italic';
+        }
+
+        a {
+            color: white;
+        }
+
+        .music {
+            font-family: 'italic';
+            margin: 0;
+            padding: 2px;
+            text-align: center;
+        }
+
+        #main-content img {
+            width: 150px;
+            float: left;
+            height: 180px;
+            padding: 5px;
+            margin: 5px;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .candle {
+            position: absolute;
+            left: 20px;
+            top: -50px;
+        }
+
+        .candle img {
+            width: 300px;
+        }
+
+        .curtain,
+        .curtain2 {
+            position: absolute;
+            pointer-events: none;
+            z-index: 999;
+        }
+
+        .curtain {
+            top: 0;
+            right: 150px;
+            width: 300px;
+            height: 400px;
+        }
+
+        .curtain img {
+            width: 250px;
+            transform: scaleX(-1);
+        }
+
+        .overlay,
+        .overlay2 {
+            position: fixed;
+            pointer-events: none;
+            mix-blend-mode: multiply;
+            z-index: 999;
+        }
+
+        .overlay {
+            inset: 0;
+            position: fixed;
+            background: url('https://file.garden/Z_u3HUVLQiZZrE8Z/webshit/o.gif') repeat;
+            opacity: 0.03;
+            z-index: 999999;
+        }
+
+        .overlay2 {
+            inset: 0;
+            position: fixed;
+            background: url('https://i.pinimg.com/originals/8a/82/7e/8a827e98d25a5eb93cde4e31ac571466.gif') repeat;
+            opacity: 0.03;
+            z-index: 999998;
+        }
+
+        ::selection {
+            background-color: #ffffff;
+            color: #000000;
+        }
+
+        .container {
+            max-width: 1000px;
+            filter: brightness(0.99) contrast(1.2);
+            margin: auto;
+        }
+
+        .layout {
+            display: grid;
+            grid-template-columns: 210px 1fr 240px;
+            grid-template-areas:
+                "left header header"
+                "left main right";
+            gap: 20px;
+            padding: 10px;
+        }
+
+        header.bordered {
+            grid-area: header;
+            text-align: center;
+            line-height: 35px;
+            height: 140px;
+            background-color: #000;
+        }
+
+        header h1,
+        h2 {
+            border-bottom: none;
+        }
+
+        .left-nav.bordered {
+            grid-area: left;
+            text-transform: uppercase;
+            background: #000;
+            padding: 5px 10px;
+        }
+
+        main {
+            grid-area: main;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .right-sidebar {
+            grid-area: right;
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .box.bordered {
+            background: #000;
+            padding: 5px;
+        }
+
+        footer.bordered {
+            text-align: center;
+            margin: 20px auto 0;
+            width: 90%;
+            padding: 12px;
+            background: #000;
+        }
+
+        @media (max-width: 600px) {
+            * {
+                cursor: auto !important;
+            }
+
+            .candle,
+            .curtain,
+            .overlay,
+            .overlay2 {
+                display: none !important;
+            }
+
+            .bordered {
+                border: none !important;
+                filter: none !important;
+            }
+
+            body {
+                background: #000 !important;
+                background-image: none !important;
+                font-size: 16px;
+            }
+
+            .layout {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "left"
+                    "main"
+                    "right";
+                padding: 10px;
+                gap: 16px;
+            }
+
+            .container {
+                max-width: 100%;
+                padding: 0 8px;
+            }
+
+            #main-content img {
+                float: none;
+                display: block;
+                margin: 10px auto;
+                width: 100%;
+                height: auto;
+                max-width: 250px;
+            }
+
+            .left-nav {
+                text-align: center;
+            }
+
+            .left-nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+
+            .box {
+                padding: 10px;
+            }
+
+            header {
+                height: auto;
+                padding: 10px;
+                line-height: normal;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            h2 {
+                font-size: 18px;
+            }
+
+            footer {
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="candle">
+        <img src="https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/candle.gif">
+    </div>
+    <div class="curtain"><img src="https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/curtain.png"></div>
+
+    <div class="overlay"></div>
+    <div class="overlay2"></div>
+
+    <div class="container">
+        <div class="layout">
+
+            <nav class="left-nav bordered">
+                <h4>Navigation</h4>
+                <a href="#">Catholic Masterlist</a>
+                <a href="https://peel.atabook.org/">Guestbook</a>
+
+                <h4 style="margin-top:10px;">Projects</h4>
+                <a href="https://alicesoft.neocities.org/"><span style="color:red;">18+</span> Alicesoft fanpage <span
+                        style="color:red;">18+</span></a>
+
+
+                <h4 style="margin-top:10px;">Settings</h4>
+                <p id="border-toggle">click here to change border</p>
+
+            </nav>
+
+            <header class="bordered">
+                <h1>PEEL</h1>
+                <h2>I have faith in my evil</h2>
+            </header>
+
+            <main id="main-content">
+                <div class="box bordered">
+                    <h3>/main</h3>
+                    <p><img src="https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/avi.png">Peel is now hosted on Github and
+                        mirrored to Neocities. Why would I do this? To not rely on one provider. One day, like
+                        Geocities, Neocities will probably cease to exist for one reason or another and I'd still like a
+                        link to my projects.</p>
+                    <p>I started experimenting with the idea of HTML/CSS back in 2019 but I didn't start actually trying
+                        build anything until 2023. Now I have peel. </p>
+                </div>
+                <div class="box bordered">
+                    <p>i'm currently moving things around, i'm super disorganized file wise so be patient -_-</p>
+                </div>
+            </main>
+
+            <aside class="right-sidebar">
+                <div style="text-align:center;" class="box bordered">
+                    <h3>Lace Yoke OP</h3>
+                    <a href="https://lolibrary.org/items/iw-lace-yoke-op">
+                        <i style="font-size:10px;">レース地ヨーク切替ワンピース</i>
+                    </a>
+                    <img src="https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/lolita.png" width="100">
+                </div>
+                <div class="box bordered">
+                    <div class="music">
+                        <span>currently listening to:</span>
+                        <script src="https://recentfm.rknight.me/now.js?u=peelmyskin&amp;nomoji=true"></script>
+                    </div>
+                </div>
+            </aside>
+
+        </div>
+        <footer class="bordered">
+            2023-2026 <a href="mailto:evilnazi@proton.me">evilnazi@proton.me</a>
+        </footer>
+    </div>
+
+    <script>
+        const borderBtn = document.getElementById('border-toggle');
+        const elements = document.querySelectorAll('.bordered');
+
+        const GOLD = 'https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/border.png';
+        const BLACK = 'https://file.garden/Z_u3HUVLQiZZrE8Z/peelv5/borderblack.png';
+
+        let isBlack = false;
+
+        borderBtn.addEventListener('click', () => {
+            isBlack = !isBlack;
+            const url = isBlack ? BLACK : GOLD;
+            elements.forEach(el => {
+                el.style.borderImage = `url('${url}') 30 round`;
+            });
+        });
+    </script>
+
+</body>
+
+</html>
